@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .wrapper {
+    text-align: center;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    width: 320px;
+    height: 320px;
+    border: 5px solid #20b2aa; /* Light sea green border color */
+    border-radius: 10px;
+    background-color: #f0fff0; /* Honeydew background color */
+    padding: 10px;
+    position: relative;
+  }
+  
+  .cell {
+    border: 2px solid #20b2aa; /* Light sea green border color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cell:hover {
+    background-color: #f0ffff; /* Azure hover color */
+  }
+  
+  .cell:active {
+    background-color: #e0ffff; /* Light cyan active color */
+  }
+  
+  .title {
+    font-size: 2em;
+    color: #20b2aa; /* Light sea green title color */
+    margin-bottom: 20px;
+  }
+  
+  .alert {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  .button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff69b4; /* Hot pink button background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #ff1493; /* Deep pink button hover color */
+  }
+  
+  .playerX {
+    color: #ff4500; /* OrangeRed player X color */
+  }
+  
+  .playerO {
+    color: #ff8c00; /* DarkOrange player O color */
+  }
+  
